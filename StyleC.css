@@ -1,0 +1,38 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 100px;
+    flex-wrap: wrap;
+  }
+.odd {
+    background-image: linear-gradient(yellow 50%, red);
+    height: 100px;
+    width: 100px;
+    margin: 3px 0;
+    font-size: 40px;
+    font-family: Tahoma;
+    text-align: center;
+    text-shadow: 2px 2px 5px green;
+    color: black;
+    }
+.even,
+.last {
+    background-color: #eeeff2;
+    height: 100px;
+    width: 100px;
+    margin: 3px 0;
+    font-size: 40px;
+    font-family: Tahoma;
+    border-top: 1px solid #687291;
+    text-align: center;
+    position: relative;
+    animation: animation 5s linear 2s infinite alternate;
+    }
+@keyframes animation {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:210px; top:0px;}
+    50%  {background-color:blue; left:210px; top:210px;}
+    75%  {background-color:green; left:0px; top:210px;}
+    100% {background-color:red; left:0px; top:0px;}
